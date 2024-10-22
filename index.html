@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart - Student Project</title>
+    <style>
+        /* Base styles - PROVIDED */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        /* Basic color scheme - PROVIDED */
+        :root {
+            --primary: #2A5A4B;
+            --accent: #98E024;
+            --background: #f8f9fa;
+            --text: #333;
+            
+            /* STUDENT TASK 1: Add more color variables for:
+               - Secondary color
+               - Error color
+               - Success color
+               - Warning color
+            */
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Basic navbar - PROVIDED */
+        nav {
+            background: var(--primary);
+            padding: 1rem;
+            color: white;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        /* STUDENT TASK 2: Complete the search bar styling
+           Requirements:
+           - Add search icon
+           - Style input field
+           - Add hover effects
+        */
+        .search-bar {
+            flex: 1;
+            max-width: 500px;
+            margin: 0 1rem;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+        }
+
+        /* Basic hero section - PROVIDED */
+        .hero {
+            background: var(--primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* STUDENT TASK 3: Enhance the hero section
+           Requirements:
+           - Add gradient background
+           - Create two-column layout
+           - Add image placeholder
+           - Make it responsive
+        */
+
+        /* Basic button - PROVIDED */
+        .btn {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        /* STUDENT TASK 4: Enhance button styles
+           Requirements:
+           - Add hover effects
+           - Create different button variants
+           - Add loading state
+           - Add disabled state
+        */
+
+        /* Basic category grid - PROVIDED */
+        .categories {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        /* STUDENT TASK 5: Style category cards
+           Requirements:
+           - Add card shadows
+           - Create hover animations
+           - Add icons
+           - Make them interactive
+        */
+        .category-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* STUDENT TASK 6: Create product grid
+           Requirements:
+           - Design product cards
+           - Add to cart functionality
+           - Show price and details
+           - Add ratings system
+        */
+
+        /* STUDENT TASK 7: Create footer
+           Requirements:
+           - Three column layout
+           - Social media links
+           - Newsletter signup
+           - Responsive design
+        */
+
+        /* Basic responsive design - PROVIDED */
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .search-bar {
+                width: 100%;
+                max-width: none;
+                margin: 1rem 0;
+            }
+        }
+
+        /* STUDENT TASK 8: Add more responsive breakpoints
+           Requirements:
+           - Handle different screen sizes
+           - Adjust typography
+           - Modify layouts
+           - Enhance mobile experience
+        */
+
+        /* STUDENT TASK 9: Add animations
+           Requirements:
+           - Smooth transitions
+           - Loading states
+           - Hover effects
+           - Page transitions
+        */
+
+        /* STUDENT TASK 10: Implement dark mode
+           Requirements:
+           - Add theme toggle
+           - Create dark color scheme
+           - Smooth theme transition
+           - Respect system preferences
+        */
+    </style>
+</head>
+<body>
+    <!-- Basic navbar structure - PROVIDED -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Fresh<span>Cart</span> 🛒</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+            </div>
+            <!-- STUDENT TASK: Add cart and user menu -->
+        </div>
+    </nav>
+
+    <!-- Basic hero section - PROVIDED -->
+    <div class="hero">
+        <h1>Fresh Groceries Delivered</h1>
+        <p>Get your groceries delivered within 2 hours!</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <!-- Basic categories section - PROVIDED -->
+    <div class="categories">
+        <h2>Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <h3>Fruits</h3>
+                <!-- STUDENT TASK: Add icon and description -->
+            </div>
+            <div class="category-card">
+                <h3>Vegetables</h3>
+                <!-- STUDENT TASK: Add icon and description -->
+            </div>
+            <div class="category-card">
+                <h3>Dairy</h3>
+                <!-- STUDENT TASK: Add icon and description -->
+            </div>
+            <!-- STUDENT TASK: Add more categories -->
+        </div>
+    </div>
+
+    <!-- STUDENT TASK: Add products section -->
+
+    <!-- STUDENT TASK: Add footer -->
+
+</body>
+</html>
